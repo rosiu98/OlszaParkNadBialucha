@@ -1,18 +1,13 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 
-type Props = {
-  animationData: any;
-};
-
-const Fala = ({ animationData }: Props) => {
+const Fala = ({ animationData }) => {
   const containerRef = useRef(null);
   const animationInstance = useRef(null);
   const lastScrollTop = useRef(0);
   const isScrolling = useRef(false);
-  const [scrollDirection, setScrollDirection] = useState("down");
 
   useEffect(() => {
     const container = containerRef.current;
@@ -30,7 +25,6 @@ const Fala = ({ animationData }: Props) => {
       const st = window.pageYOffset || document.documentElement.scrollTop;
       const direction = st > lastScrollTop.current ? "down" : "up";
       lastScrollTop.current = st <= 0 ? 0 : st;
-      setScrollDirection(direction);
 
       if (!isScrolling.current) {
         isScrolling.current = true;
