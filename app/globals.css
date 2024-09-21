@@ -25,3 +25,58 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .navbar-link {
+    @apply relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left;
+  }
+
+  .box-shadow {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .border-text {
+    -webkit-text-stroke: 1px #8f8f8f;
+    color: transparent;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 100%;
+  }
+
+  .arrow {
+    animation: move-down 2s infinite;
+    position: relative;
+  }
+
+  /* Definicja animacji */
+  @keyframes move-down {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 20px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f201d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d2018;
+}
