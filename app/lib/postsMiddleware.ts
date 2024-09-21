@@ -12,7 +12,7 @@ export interface BlogMetadata {
   publishDate: string;
 }
 
-function isBlogHeaderData(data: any): data is BlogMetadata {
+function isBlogHeaderData(data: BlogMetadata): data is BlogMetadata {
   return (
     typeof data.title === "string" &&
     typeof data.description === "string" &&
