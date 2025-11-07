@@ -80,3 +80,43 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #1d2018;
 }
+
+.gradient__overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(170, 170, 170, 0) 60%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(209, 219, 244, 0) 60%,
+      rgba(209, 219, 244, 0.5) 80%,
+      rgba(209, 219, 244, 1) 100%
+    );
+  transition: opacity 0.4s ease 0s;
+  opacity: 0.7;
+}
+
+.gradient__overlay:hover::before {
+  opacity: 1;
+}
+
+.gradient__overlay img {
+  transition: scale 0.4s ease 0s;
+}
+
+.gradient__overlay:hover img {
+  scale: 1.05;
+}

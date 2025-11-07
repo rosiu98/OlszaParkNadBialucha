@@ -23,11 +23,11 @@ const Navigation = () => {
           <Link className="navbar-link" href={"/blogs"}>
             Wydarzenia
           </Link>
-          <Link className="navbar-link" href={"/"}>
-            Nowości
+          <Link className="navbar-link" href={"/#projekty"}>
+            Projekty
           </Link>
-          <Link className="navbar-link" href={"/"}>
-            Rzeka Białucha
+          <Link className="navbar-link" href={"/olsza-park-nad-bialucha"}>
+            Park Nad Białuchą
           </Link>
         </div>
         <div className="flex items-center justify-center">
@@ -95,11 +95,15 @@ const Navigation = () => {
               <Link className="" href={"/blogs"}>
                 Wydarzenia
               </Link>
-              <Link className="navbar-link" href={"/"}>
-                Nowości
+              <Link
+                onClick={toggleMenu}
+                className="navbar-link"
+                href={"/#projekty"}
+              >
+                Projekty
               </Link>
-              <Link className="navbar-link" href={"/"}>
-                Rzeka Białucha
+              <Link className="navbar-link" href={"/olsza-park-nad-bialucha"}>
+                Park Nad Białuchą
               </Link>
               <Link className="navbar-link" href={"/"}>
                 Atrakcje

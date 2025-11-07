@@ -24,7 +24,7 @@ const Home = async () => {
                   width={500}
                   height={500}
                   alt={post.description}
-                  className="w-full my-0"
+                  className="w-full my-0 rounded-[20px]"
                 />
               </div>
               <div>

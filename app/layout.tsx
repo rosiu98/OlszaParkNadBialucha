@@ -3,9 +3,9 @@ import { redHatFont } from "./ui/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Olsza Park Nad Białuchą",
+  title: "Białucha",
   description:
-    "Zielona oaza położona w malowniczej dzielnicy Olsza, w pobliżu rzeki Białucha. Park oferuje spokojne miejsce do wypoczynku, aktywności na świeżym powietrzu oraz rekreacji dla całych rodzin. W jego centrum znajduje się przestronny trawnik idealny na pikniki, a także liczne ścieżki spacerowe i rowerowe, które wiją się wśród starannie utrzymanej roślinności.",
+    "Część Krakowa, która z roku na rok zyskuje coraz większe znaczenie. Łączy wygodę życia w mieście z bliskością natury i terenów rekreacyjnych.",
 };
 
 export default function RootLayout({
